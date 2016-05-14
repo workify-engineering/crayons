@@ -1,0 +1,26 @@
+{
+  "name": "crayons",
+  "version": "0.0.1",
+  "description": "",
+  "main": "crayons.js",
+  "scripts": {
+    "test": "mocha test/index.test.js -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/workify-engineering/crayons.git"
+  },
+  "keywords": [
+    "colors"
+  ],
+  "author": "Workify <engineering@getworkify.com> (http://getworkify.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/workify-engineering/crayons/issues"
+  },
+  "homepage": "https://github.com/workify-engineering/crayons#readme",
+  "devDependencies": {
+    "chai": "3.5.0",
+    "mocha": "2.4.5"
+  }
+}
