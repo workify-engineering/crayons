@@ -33,8 +33,7 @@ var box = function (colors) {
   };
 
   var pickColor = function (searchResult, position, interpolate) {
-    var result
-      , current = searchResult.current
+    var current = searchResult.current
       , next = searchResult.next;
 
     if (current.position === position) {
@@ -67,7 +66,8 @@ var box = function (colors) {
   return {
     pick: interpolate,
     generate: function (count) {
-      for (var picks = [], i = count; i > 0; i--) {
+      var var picks = [];
+      for (var i = count; i > 0; i--) {
         picks.push(interpolate(i / count));
       }
       return picks;

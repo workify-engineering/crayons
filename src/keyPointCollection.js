@@ -5,7 +5,7 @@ var KeyPointCollection = function(provider) {
   this.data = [];
 
   var search = function (arr, position) {
-    var current, next, currentIndex, nextIndex, result;
+    var current, next, currentIndex, nextIndex, result = { };
     for (var i = 0; i < arr.length; i++) {
       current = arr[i]; currentIndex = i;
       if (position < current.position) {
