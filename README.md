@@ -27,15 +27,17 @@ Originally we developed this internally, but we liked it so much that we decided
 
 Crayons is still in its infancy, but you can use crayons to build a "box" (your gradient) like this:
 
-    var box = crayons.box([
-      { r: 251, g: 229, b: 127 },
-      { r: 250, g: 177, b: 113 },
-      { r: 119, g: 221, b: 133 },
-      { r: 240, g: 116, b: 100 },
-      { r:  39, g: 173, b:  66 }
-    ]);
+```javascript
+var box = crayons.box([
+  { r: 251, g: 229, b: 127 },
+  { r: 250, g: 177, b: 113 },
+  { r: 119, g: 221, b: 133 },
+  { r: 240, g: 116, b: 100 },
+  { r:  39, g: 173, b:  66 }
+]);
 
-    var percentage = 0.40;
-    var color = box.pick(percentage); // color == '#87cd81'
+var percentage = 0.40;
+var color = box.pick(percentage); // color == '#87cd81'
+```
 
 The five colors above will be translated into Lab colors, which are optimized for human vision. When a percentage value (0.0 to 1.0) is requested, a computed color is returned from that Lab color gradient.
